@@ -1,0 +1,28 @@
+## 1. Register User
+- *Method:* POST
+- *URL:* http://localhost:3000/api/auth/register
+- *Body (JSON):*
+  {
+      "username": "kimetsu",
+      "email": "yudakimetsu@gmail.com",
+      "password": "K1m3tsu86##",
+      "role": "admin"
+  }
+- *Response Sukses (201):*
+  {
+      "message": "User berhasil didaftarkan"
+  }
+
+## 2. Login User
+- *Method:* POST
+- *URL:* http://localhost:3000/api/auth/login
+- *Body (JSON):*
+  {
+      "email": "yudakimetsu@gmail.com",
+      "password": "K1m3tsu86##"
+  }
+- *Response Sukses (200):*
+  {
+      "message": "Login berhasil",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+  }
